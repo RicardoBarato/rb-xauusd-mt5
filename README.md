@@ -1,93 +1,155 @@
 # RB XAU/USD MT5
 
-RB XAU/USD MT5 is an open-source, research-grade Expert Advisor for MetaTrader 5, focused on gold/XAUUSD systematic backtesting, market regime research and risk-controlled execution.
+Research-grade open-source Expert Advisor for MetaTrader 5 focused on gold/XAUUSD backtesting, market-regime research and risk-controlled execution.
 
-This project is not financial advice, not a signal service and not a promise of future profitability. Historical backtests are provided for research transparency only.
+![MQL5](https://img.shields.io/badge/MQL5-source-blue)
+![MetaTrader 5](https://img.shields.io/badge/MetaTrader-5-1f6feb)
+![XAUUSD / Gold](https://img.shields.io/badge/XAUUSD-Gold-b8860b)
+![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0--only-green)
+![Source-only](https://img.shields.io/badge/release-source--only-lightgrey)
+![No .ex5 binaries](https://img.shields.io/badge/no-.ex5_binaries-red)
+![Research-grade](https://img.shields.io/badge/status-research--grade-orange)
 
-This repository intentionally does not provide compiled `.ex5` binaries. Users must review and compile the source code themselves using MetaEditor.
+This project is not financial advice, not a signal service and not a promise of future profitability. Historical backtests are presented for research transparency only.
 
-RB XAU/USD MT5 é um Expert Advisor open-source de pesquisa para MetaTrader 5, focado em ouro/XAUUSD, backtests sistemáticos, pesquisa de regime de mercado e execução com controle de risco.
+## Project Snapshot
 
-Este projeto não é recomendação financeira, não é serviço de sinais e não promete rentabilidade futura. Backtests históricos são apresentados apenas como transparência de pesquisa.
+| Field | Value |
+|---|---|
+| Market | Gold / XAUUSD |
+| Platform | MetaTrader 5 |
+| Language | MQL5 |
+| Type | Expert Advisor |
+| Release model | Source-only |
+| License | GPL-3.0-only |
+| Compiled binaries | Not distributed |
+| Real presets | Not distributed |
+| Raw reports | Not distributed |
 
-Este repositório intencionalmente não fornece binários `.ex5` compilados. Os usuários devem revisar e compilar o código-fonte por conta própria usando o MetaEditor.
+## Why This Project Exists
 
-## Status
+RB XAU/USD MT5 comes from a real research workflow around automated gold/XAUUSD trading. The public repository opens the source code for review, study and community evolution while keeping private presets, raw tester artifacts and production parameters out of the public surface.
 
-Public source-only export prepared for human review before publication.
+The goal is to show a serious engineering workflow for:
 
-## Source
+- systematic XAUUSD research;
+- market-regime thinking;
+- risk-controlled execution;
+- repeatable Strategy Tester validation;
+- disciplined separation between source code, private research and public documentation.
 
-Main Expert Advisor:
+This is deliberately not presented as a ready-made trading product. It is a research-grade codebase and documentation package intended for technical review.
 
-```text
-src/RB_XAUUSD_MT5.mq5
-```
+## Backtest Research Highlights
 
-The repository does not include:
+The project includes multi-year research history, but only aggregated and sanitized summaries are published here. Raw reports, real presets and broker/account-specific artifacts are intentionally excluded.
+
+| Research item | Public status | Notes |
+|---|---|---|
+| Multi-year XAUUSD testing | Published as summary | Raw reports not included |
+| Strategy Tester validation | Published as methodology | Depends on data quality and assumptions |
+| Risk-control logic | Included in source | Users must review before use |
+| Source-only release | Published | No `.ex5` binaries |
+| Real presets | Not published | Prevents unsafe copy/paste live use |
+| Raw MT5 reports | Not published | Avoids broker/account/path leakage |
+
+Aggregated metrics already documented in the sanitized research checkpoint:
+
+| Test Set | Period | Symbol | Trades | Profit Factor | Drawdown | Notes |
+|---|---:|---|---:|---:|---:|---|
+| Aggressive baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 54 | 2.50 | 39.90% | 10y historical backtest return +662.06%; protected research baseline |
+| Controlled baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 49 | 2.18 | 31.56% | 10y historical backtest return +273.43%; lower-risk comparison |
+| Conservative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 10 | 4.63 | 0.73% | 10y historical backtest return +7.89%; defensive comparison |
+| Alternative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 52 | 2.18 | 40.39% | 10y historical backtest return +348.76%; not promoted |
+
+These numbers are research artifacts. They do not prove future profitability, live execution quality or suitability for any specific account.
+
+## What Is Included
+
+- GPL-3.0 source code;
+- MQL5 Expert Advisor;
+- risk-control logic;
+- methodology notes;
+- architecture overview;
+- risk disclosure;
+- validation limits;
+- sanitized example inputs.
+
+## What Is Intentionally Not Included
 
 - compiled `.ex5` binaries;
 - real `.set` presets;
 - raw MetaTrader reports;
+- optimization files;
 - broker exports;
 - account data;
-- optimization grids;
-- private research logs.
+- private research logs;
+- production parameters.
 
-## License
+## Source-Only Release
 
-License: GPL-3.0-only
+This repository intentionally does not provide compiled `.ex5` binaries. Users must review and compile the source code themselves using MetaEditor.
 
-See [LICENSE](LICENSE).
+The included source and documentation are not a production preset. Any serious use requires independent code review, fresh testing, risk controls and responsibility for execution assumptions.
 
-## Intended Use
+## How To Compile
 
-This project is intended for:
+1. Clone the repository:
 
-- MQL5 source-code review;
-- educational study of Expert Advisor structure;
-- systematic trading research;
-- Strategy Tester experimentation;
-- risk-management workflow design;
-- reproducibility discussions around backtesting.
+   ```bash
+   git clone https://github.com/RicardoBarato/rb-xauusd-mt5.git
+   ```
 
-It is not intended to be copied directly into live trading without independent review, testing and risk control.
+2. Open MetaEditor from MetaTrader 5.
+3. Copy or open `src/RB_XAUUSD_MT5.mq5`.
+4. Compile locally.
+5. Test in Strategy Tester and demo.
+6. Perform independent validation before making any operational decision.
 
-## Compile
+## Repository Structure
 
-1. Open MetaEditor from MetaTrader 5.
-2. Place `src/RB_XAUUSD_MT5.mq5` inside your MT5 `MQL5/Experts/` workspace.
-3. Review all inputs and source code.
-4. Compile locally in MetaEditor.
-5. Test first in Strategy Tester and demo only.
+```text
+.
+|-- README.md
+|-- LICENSE
+|-- DISCLAIMER.md
+|-- SECURITY.md
+|-- CONTRIBUTING.md
+|-- CHANGELOG.md
+|-- src/
+|   `-- RB_XAUUSD_MT5.mq5
+|-- docs/
+|   |-- ARCHITECTURE.md
+|   |-- BACKTEST_RESEARCH_SUMMARY.md
+|   |-- METHODOLOGY.md
+|   |-- PUBLICATION_CHECKLIST.md
+|   |-- RESEARCH_SNAPSHOT.md
+|   |-- RISK_DISCLOSURE.md
+|   `-- VALIDATION_LIMITS.md
+`-- examples/
+    `-- example_inputs_sanitized.md
+```
 
 ## Documentation
 
 - [Disclaimer](DISCLAIMER.md)
-- [Risk Disclosure](docs/RISK_DISCLOSURE.md)
-- [Methodology](docs/METHODOLOGY.md)
-- [Architecture](docs/ARCHITECTURE.md)
 - [Backtest Research Summary](docs/BACKTEST_RESEARCH_SUMMARY.md)
+- [Research Snapshot](docs/RESEARCH_SNAPSHOT.md)
+- [Methodology](docs/METHODOLOGY.md)
+- [Risk Disclosure](docs/RISK_DISCLOSURE.md)
+- [Architecture](docs/ARCHITECTURE.md)
 - [Validation Limits](docs/VALIDATION_LIMITS.md)
 - [Publication Checklist](docs/PUBLICATION_CHECKLIST.md)
 - [Sanitized example inputs](examples/example_inputs_sanitized.md)
 
-## Security And Privacy
+## License
 
-Do not commit or share:
+GPL-3.0-only. Distributed modifications must preserve the GPL-3.0 license terms.
 
-- account numbers;
-- broker exports;
-- real presets;
-- compiled binaries;
-- raw reports;
-- logs;
-- optimization files;
-- local terminal paths;
-- credentials.
+See [LICENSE](LICENSE).
 
-See [SECURITY.md](SECURITY.md).
+## Risk And Responsibility
 
-## Important Warning
+Gold/XAUUSD trading is volatile and risky. Backtests can diverge materially from live execution due to spread, slippage, commissions, liquidity, broker feed differences and regime changes.
 
-Trading gold/XAUUSD is risky and volatile. Strategy Tester results can diverge materially from live execution because of spread, slippage, commissions, liquidity, broker feed differences and market regime changes. Past performance and backtests do not guarantee future results.
+Use of this source code is entirely the user's responsibility.
