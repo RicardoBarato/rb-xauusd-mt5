@@ -57,10 +57,10 @@ Aggregated metrics already documented in the sanitized research checkpoint:
 
 | Test Set | Period | Symbol | Trades | Profit Factor | Drawdown | Notes |
 |---|---:|---|---:|---:|---:|---|
-| Aggressive baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 54 | 2.50 | 39.90% | 10y historical return +662.06%; protected research baseline |
-| Controlled baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 49 | 2.18 | 31.56% | 10y historical return +273.43%; lower-risk comparison |
-| Conservative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 10 | 4.63 | 0.73% | 10y historical return +7.89%; defensive comparison |
-| Alternative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 52 | 2.18 | 40.39% | 10y historical return +348.76%; not promoted |
+| Aggressive baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 54 | 2.50 | 39.90% | 10y historical backtest return +662.06%; protected research baseline |
+| Controlled baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 49 | 2.18 | 31.56% | 10y historical backtest return +273.43%; lower-risk comparison |
+| Conservative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 10 | 4.63 | 0.73% | 10y historical backtest return +7.89%; defensive comparison |
+| Alternative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 52 | 2.18 | 40.39% | 10y historical backtest return +348.76%; not promoted |
 
 These numbers are research artifacts. They do not prove future profitability, live execution quality or suitability for any specific account.
 

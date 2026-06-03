@@ -20,7 +20,7 @@ The public repository is source-only. It is designed for code review and methodo
 
 Aggregated baseline metrics:
 
-| Test Set | Period | Symbol | Trades | Historical Return | Profit Factor | Drawdown | Public Status |
+| Test Set | Period | Symbol | Trades | Historical Backtest Return | Profit Factor | Drawdown | Public Status |
 |---|---:|---|---:|---:|---:|---:|---|
 | Aggressive baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 54 | +662.06% | 2.50 | 39.90% | Protected research baseline |
 | Controlled baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 49 | +273.43% | 2.18 | 31.56% | Protected comparison |
