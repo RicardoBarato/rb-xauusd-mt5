@@ -1,6 +1,6 @@
 # Architecture
 
-This document describes the Expert Advisor at a high level without publishing private presets or production parameters.
+This document describes the `XAUUSD MT5 Expert Advisor` source release at a high level without publishing private presets, production parameters or non-public research artifacts.
 
 ## Main Components
 
