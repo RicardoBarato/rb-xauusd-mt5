@@ -10,7 +10,7 @@ Research-grade open-source Expert Advisor for MetaTrader 5 focused on gold/XAUUS
 ![No .ex5 binaries](https://img.shields.io/badge/no-.ex5_binaries-red)
 ![Research-grade](https://img.shields.io/badge/status-research--grade-orange)
 
-This project is not financial advice, not a signal service and not a promise of future profitability. Historical backtests are presented for research transparency only.
+This project is not financial advice, not a signal service and not a promise of future profitability. Historical testing is discussed for research-methodology transparency only.
 
 ## Project Snapshot
 
@@ -25,44 +25,38 @@ This project is not financial advice, not a signal service and not a promise of 
 | Compiled binaries | Not distributed |
 | Real presets | Not distributed |
 | Raw reports | Not distributed |
+| Public performance metrics | Not published |
 
 ## Why This Project Exists
 
-RB XAU/USD MT5 comes from a real research workflow around automated gold/XAUUSD trading. The public repository opens the source code for review, study and community evolution while keeping private presets, raw tester artifacts and production parameters out of the public surface.
+RB XAU/USD MT5 comes from a real research workflow around automated gold/XAUUSD trading. The public repository opens the source code for review, study and community evolution while keeping private presets, raw tester artifacts, backtest results and production parameters out of the public surface.
 
 The goal is to show a serious engineering workflow for:
 
 - systematic XAUUSD research;
 - market-regime thinking;
 - risk-controlled execution;
-- repeatable Strategy Tester validation;
+- repeatable Strategy Tester validation methodology;
 - disciplined separation between source code, private research and public documentation.
 
 This is deliberately not presented as a ready-made trading product. It is a research-grade codebase and documentation package intended for technical review.
 
-## Backtest Research Highlights
+## Backtest Research Boundary
 
-The project includes multi-year research history, but only aggregated and sanitized summaries are published here. Raw reports, real presets and broker/account-specific artifacts are intentionally excluded.
+This project comes from a real XAUUSD research workflow, but the public repository does not publish performance tables, production presets, optimization grids, raw reports, broker exports or account-specific artifacts.
 
-| Research item | Public status | Notes |
-|---|---|---|
-| Multi-year XAUUSD testing | Published as summary | Raw reports not included |
-| Strategy Tester validation | Published as methodology | Depends on data quality and assumptions |
-| Risk-control logic | Included in source | Users must review before use |
-| Source-only release | Published | No `.ex5` binaries |
-| Real presets | Not published | Prevents unsafe copy/paste live use |
-| Raw MT5 reports | Not published | Avoids broker/account/path leakage |
+The public material focuses on:
 
-Aggregated metrics already documented in the sanitized research checkpoint:
+- source-code review;
+- EA architecture;
+- risk-control structure;
+- methodology;
+- validation limits;
+- publication hygiene.
 
-| Test Set | Period | Symbol | Trades | Profit Factor | Drawdown | Notes |
-|---|---:|---|---:|---:|---:|---|
-| Aggressive baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 54 | 2.50 | 39.90% | 10y historical backtest return +662.06%; protected research baseline |
-| Controlled baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 49 | 2.18 | 31.56% | 10y historical backtest return +273.43%; lower-risk comparison |
-| Conservative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 10 | 4.63 | 0.73% | 10y historical backtest return +7.89%; defensive comparison |
-| Alternative baseline | 2016-05-20 to 2026-05-20 | XAUUSD | 52 | 2.18 | 40.39% | 10y historical backtest return +348.76%; not promoted |
+Backtest results, private baselines and parameter studies are intentionally kept outside the public repository. Any serious evaluation should be performed independently in a clean MetaTrader 5 environment, with fresh data, realistic costs, broker-specific assumptions and strict risk controls.
 
-These numbers are research artifacts. They do not prove future profitability, live execution quality or suitability for any specific account.
+Backtests are research tools, not guarantees. Historical behavior can fail in live execution because of spread, slippage, liquidity, broker feed differences, overfitting, regime changes and execution constraints.
 
 ## What Is Included
 
@@ -80,6 +74,7 @@ These numbers are research artifacts. They do not prove future profitability, li
 - compiled `.ex5` binaries;
 - real `.set` presets;
 - raw MetaTrader reports;
+- public performance tables;
 - optimization files;
 - broker exports;
 - account data;

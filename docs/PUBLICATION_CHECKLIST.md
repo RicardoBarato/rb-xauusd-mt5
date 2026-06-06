@@ -13,6 +13,9 @@ Before publishing or updating this repository, verify:
 - [ ] No credentials.
 - [ ] No local machine paths.
 - [ ] No screenshots with sensitive data.
+- [ ] No public performance tables.
+- [ ] No historical return, profit factor, drawdown or trade-count promotion.
+- [ ] No buy-and-hold comparison table.
 - [ ] README contains no profit guarantee.
 - [ ] Disclaimer and risk disclosure are clear.
 - [ ] License is GPL-3.0-only.
