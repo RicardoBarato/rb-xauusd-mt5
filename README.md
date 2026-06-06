@@ -12,6 +12,14 @@ Research-grade open-source Expert Advisor for MetaTrader 5 focused on gold/XAUUS
 
 This project is not financial advice, not a signal service and not a promise of future profitability. Historical testing is discussed for research-methodology transparency only.
 
+## Project Status
+
+This repository is a public source-only research release. The original private research cycle behind this export is considered closed for public purposes.
+
+The project remains available for study, review, forks and independent evolution. Future contributors should treat it as a research codebase, not as a maintained trading product, production EA, signal service or optimized preset package.
+
+No public performance metrics, real presets, raw reports, broker exports, account data or production parameters are published or supported.
+
 ## Project Snapshot
 
 | Field | Value |
