@@ -4,7 +4,7 @@
 
 RB XAU/USD MT5 is a source-only public Expert Advisor project for MetaTrader 5. It is built around systematic gold/XAUUSD research, risk-controlled execution and transparent methodology documentation.
 
-The public repository exists to make the code and research structure reviewable without publishing private presets, raw reports or production configuration.
+The public repository exists to make the code and research structure reviewable without publishing private presets, raw reports, backtest results or production configuration.
 
 ## Research Scope
 
@@ -13,7 +13,7 @@ The public repository exists to make the code and research structure reviewable 
 | Market | Gold / XAUUSD |
 | Platform | MetaTrader 5 |
 | Language | MQL5 |
-| Method | Expert Advisor backtesting |
+| Method | Expert Advisor backtesting methodology |
 | Focus | Market-regime research and risk control |
 | Publication mode | Source-only |
 
@@ -26,13 +26,15 @@ The public repository exists to make the code and research structure reviewable 
 - Risk disclosure.
 - Validation limits.
 - Sanitized example inputs.
-- Aggregated backtest summaries.
+- Public research-boundary notes.
 
 ## What Was Omitted For Safety
 
 - Compiled `.ex5` binaries.
 - Real `.set` presets.
 - Raw MT5 reports.
+- Performance tables.
+- Historical return, profit factor, drawdown and trade-count summaries.
 - HTML/XML/CSV/XLSX/log exports.
 - Broker exports.
 - Account data.
@@ -52,14 +54,15 @@ Compiled `.ex5` binaries are intentionally not distributed because they are hard
 
 ## Current Research Read
 
-The aggregated research snapshot suggests that some historical XAUUSD profiles were promising, but also exposed meaningful drawdown and low-trade-count limitations. No experimental filter has been promoted as a replacement for the protected baselines.
+The private research process identified historical XAUUSD profiles that require further validation, but the public repository does not publish performance results and should not be interpreted as evidence of future profitability, live-readiness or production suitability.
 
 The technical direction remains validation-first:
 
-- preserve the strongest historical baselines;
+- keep private baselines outside the public repository;
 - avoid publishing private operational artifacts;
 - test robustness before claiming anything stronger;
-- focus on out-of-sample, walk-forward and Monte Carlo validation.
+- focus on out-of-sample, walk-forward and Monte Carlo validation;
+- keep the public repository focused on source code, methodology and risk boundaries.
 
 ## Next Technical Steps
 
@@ -67,7 +70,7 @@ The technical direction remains validation-first:
 2. Add out-of-sample validation.
 3. Run walk-forward validation.
 4. Run Monte Carlo and spread/slippage stress.
-5. Continue separating public summaries from private research artifacts.
+5. Continue separating public methodology from private research artifacts.
 
 ## Backtest Warning
 
