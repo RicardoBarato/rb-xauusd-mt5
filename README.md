@@ -1,4 +1,4 @@
-# RB XAU/USD MT5
+# XAUUSD MT5 Expert Advisor
 
 Research-grade open-source Expert Advisor for MetaTrader 5 focused on gold/XAUUSD backtesting, market-regime research and risk-controlled execution.
 
@@ -37,7 +37,7 @@ No public performance metrics, real presets, raw reports, broker exports, accoun
 
 ## Why This Project Exists
 
-RB XAU/USD MT5 comes from a real research workflow around automated gold/XAUUSD trading. The public repository opens the source code for review, study and community evolution while keeping private presets, raw tester artifacts, backtest results and production parameters out of the public surface.
+XAUUSD MT5 Expert Advisor comes from a real research workflow around automated gold/XAUUSD trading. The public repository opens the source code for review, study and community evolution while keeping private presets, raw tester artifacts, backtest results and production parameters out of the public surface.
 
 The goal is to show a serious engineering workflow for:
 
@@ -97,10 +97,10 @@ The included source and documentation are not a production preset. Any serious u
 
 ## How To Compile
 
-1. Clone the repository:
+1. Clone the repository after it has been renamed:
 
    ```bash
-   git clone https://github.com/RicardoBarato/rb-xauusd-mt5.git
+   git clone https://github.com/RicardoBarato/xauusd-mt5-expert-advisor.git
    ```
 
 2. Open MetaEditor from MetaTrader 5.
